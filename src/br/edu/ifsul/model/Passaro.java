@@ -50,10 +50,7 @@ public class Passaro extends Animal implements AnimalMagico {
 
     @Override
     public String getTipo() {
-        return tipo;
-    }
-    public void setTipo(String tipo){
-        this.tipo = tipo;
+        return "Passaro";
     }
 
 
@@ -61,7 +58,6 @@ public class Passaro extends Animal implements AnimalMagico {
     @Override
     public String toString() {
         return "\nPassaro{" +
-
                 "nome='" + nome + '\'' +
                 ", x=" + x +
                 ", y=" + y +

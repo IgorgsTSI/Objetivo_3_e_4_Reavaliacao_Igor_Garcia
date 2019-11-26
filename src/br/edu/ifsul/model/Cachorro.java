@@ -18,10 +18,7 @@ public class Cachorro extends Animal implements AnimalMagico{
 
     @Override
     public String getTipo() {
-        return tipo;
-    }
-    public void setTipo(String tipo){
-        this.tipo = tipo;
+        return "Cachorro";
     }
 
     public void setNome(String nome) {

@@ -4,7 +4,6 @@ public abstract class Animal {
     protected double x;
     protected double y;
     protected String nome;
-    protected String tipo;
 
     public Animal(){
 

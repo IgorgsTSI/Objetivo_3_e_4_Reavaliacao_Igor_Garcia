@@ -47,7 +47,7 @@ public class Peixe extends Animal {
 
     @Override
     public String getTipo() {
-        return null;
+        return "Peixe";
     }
 
     @Override
