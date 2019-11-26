@@ -17,7 +17,7 @@ public class Main {
 
         Cachorro ca1 = new Cachorro("Banzé",40,40);
         Cachorro ca2 = new Cachorro("Bob",50,50);
-        Cachorro ca3 = new Cachorro("Gaudencio",60,60);
+        Cachorro ca3 = new Cachorro("Gaudêncio",60,60);
 
         Passaro pa1 = new Passaro("Baitaca",70,70);
         Passaro pa2 = new Passaro("Pirisca",80,80);
@@ -49,12 +49,6 @@ public class Main {
         //Questão D:
         System.out.println("Questão D:");
         animais.forEach(a->{
-            if(a instanceof Cachorro){
-                ((Cachorro) a).setTipo("Cachorro");
-            }
-            if(a instanceof Passaro){
-                ((Passaro) a).setTipo("Pássaro");
-            }
             if(a instanceof AnimalMagico){
                 ((AnimalMagico) a).falar("Oi eu sou o " + a.getNome() + ", um " + a.getTipo());
             }
@@ -64,9 +58,7 @@ public class Main {
         System.out.println("Questão E:");
         animais.forEach(a->{
             if(a instanceof Peixe){
-                a.setY(8);
-                a.setX(8);
-                ((Peixe) a).setZ(8);
+                ((Peixe) a).mover3D(8,8,8);
             }
         });
         System.out.println(pe1);
